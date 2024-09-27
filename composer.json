@@ -3,12 +3,23 @@
     "autoload": {
         "psr-4": {
             "Kirilllapunov\\HexletPhp\\": "src/"
-        }
+        },
+        "files": [
+            "src/Runner.php"
+        ]
     },
     "authors": [
         {
             "name": "Kirill"
         }
     ],
-    "require": {}
+    "scripts": {
+        "phpcs": "phpcs"
+    },
+    "require": {
+        "illuminate/collections": "^11.23"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.10"
+    }
 }
